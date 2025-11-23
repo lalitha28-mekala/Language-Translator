@@ -15,7 +15,7 @@ if st.button("Translate"):
         st.stop()
     # --------------------------------------------
 
-    url = "https://lalithamekala.app.n8n.cloud/webhook-test/40c19cc0-006a-4012-a696-18245a7f7b2b"
+    url = "https://lalithamekala.app.n8n.cloud/webhook/40c19cc0-006a-4012-a696-18245a7f7b2b"
     payload = {
         "text": text,
         "language": language
@@ -43,3 +43,4 @@ if st.button("Translate"):
         st.success(translated)
     else:
         st.error("Unexpected response format.")
+
