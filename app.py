@@ -2,10 +2,10 @@ import streamlit as st
 import requests
 import json
 
-st.title("Translator App")
+st.title("🌐 Language Translator App")
 
 text = st.text_area("Enter English text")
-language = st.radio("Select Language", ["Telugu", "Hindi", "Spanish"])
+language = st.radio("Select Language", ["Telugu", "Hindi", "Spanish",Urdu])
 
 if st.button("Translate"):
 
@@ -43,4 +43,5 @@ if st.button("Translate"):
         st.success(translated)
     else:
         st.error("Unexpected response format.")
+
 
